@@ -1,4 +1,18 @@
 .brands {
     width: 100%;
     background-color: black;
+    padding: 35px 0;
+    .brands_child {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .brand_item {
+            width: 16%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

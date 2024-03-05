@@ -1,25 +1,31 @@
 import React from 'react'
 import './brands.scss'
+import samsung from '../../assets/images/Vector.png'
+import google from '../../assets/images/Google.png'
+import sony from '../../assets/images/Sony.png'
+import walmart from '../../assets/images/Walmart.png'
+import microsoft from '../../assets/images/Microsoft.png'
+
 function Brands() {
   const data = [
     {
-      img_src: "https://p.kindpng.com/picc/s/37-370780_samsung-logo-white-png-transparent-png.png",
+      img_src: samsung,
       name: "samsung"
     },
     {
-      img_src: "https://www.figma.com/file/2nWojy3y3puRw90DvtJlnU/Maqola?type=design&node-id=73-2278&mode=design&t=SVrBGFrE0uf4eR2t-4",
+      img_src: walmart,
       name: "walmart"
     },
     {
-      img_src: "https://www.figma.com/file/2nWojy3y3puRw90DvtJlnU/Maqola?type=design&node-id=73-2282&mode=design&t=SVrBGFrE0uf4eR2t-4",
+      img_src: microsoft,
       name: "microsoft"
     },
     {
-      img_src: "https://www.figma.com/file/2nWojy3y3puRw90DvtJlnU/Maqola?type=design&node-id=73-2288&mode=design&t=SVrBGFrE0uf4eR2t-4",
+      img_src: sony,
       name: "sony"
     },
     {
-      img_src: "https://www.figma.com/file/2nWojy3y3puRw90DvtJlnU/Maqola?type=design&node-id=73-2293&mode=design&t=SVrBGFrE0uf4eR2t-4",
+      img_src: google,
       name: "google"
     }
   ]
@@ -29,7 +35,7 @@ function Brands() {
             {
               data?.map((item, index) => {
                 return (
-                  <div className='brand_item'>
+                  <div className='brand_item' key={index}>
                     <img src={item.img_src} alt={item.name}/>
                   </div>
                 )
